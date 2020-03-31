@@ -10,9 +10,9 @@ print("Jan: {2}, Feb:{0}, Mar:{2}, Apr: {1}, May: {2}, Jun: {1}".format(28,30,31
 print()
 
 print("""
-Jan:{2}
-Feb:{0}
-Mar:{2}
+Jan: {2}
+Feb: {0}
+Mar: {2}
 Apr: {1}
 May: {2}
 Jun: {1}

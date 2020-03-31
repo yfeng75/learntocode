@@ -10,6 +10,6 @@ print(first[::-1]+ " " + last[::-1])
 
 
 #q3
-#str1="abc"
-#str2="xyz"
-#print(str2[0:2]+str1[2:]+ " " + str1[0:2]+str2[2:])
+str1="abc"
+str2="xyz"
+print(str2[0:2]+str1[2:]+ " " + str1[0:2]+str2[2:])
