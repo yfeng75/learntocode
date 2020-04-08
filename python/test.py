@@ -16,6 +16,3 @@ while guess !=answer:
 
 print("You got it!")
 
-while guess == answer:
-    print("You got it at first time!")
-    break
