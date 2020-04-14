@@ -1,3 +1,4 @@
+def myfunction(list):  
 options=["red", "green","blue","purple","black","brown","gray","silver", "orange"]
 print("please choose form the list below: ")
 
@@ -8,7 +9,7 @@ i=1
 for guess in options:
     print( str(i) +". " + guess)
     i+=1
-    
+     
 print("0. exit")
 chosen=""
 while chosen !=0:

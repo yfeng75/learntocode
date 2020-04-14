@@ -64,20 +64,78 @@
 #   even_odd_transform([0, 0, 0], 10) ➞ [-20, -20, -20]
 #  
 #   even_odd_transform([1, 2, 3], 1) ➞ [3, 0, 5]
-def even_odd_transform(num_list,times):
-    for i in range (1,times+1):
-        for j in range(0,len(num_list)):
-            if num_list[j]%2==0:
-                num_list[j]-=2
-            else:
-                num_list[j]+=2
-    return num_list
+# def even_odd_transform(num_list,times):
+#     for i in range (times):
+#         for j in range(0,len(num_list)):
+#             if num_list[j]%2==0:
+#                 num_list[j]-=2
+#             else:
+#                 num_list[j]+=2
+#     return num_list
 
 
-print(even_odd_transform([1,2,3], 3))
+# print(even_odd_transform([1,2,3], 3))
+
+# 4.Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+# Examples
+#   count_vowels("Celebration") ➞ 5
+#   count_vowels("Palm") ➞ 1
+#   count_vowels("Prediction") ➞ 4
+
+# Notes
+#     a, e, i, o, u are considered vowels (not y).
+#     All test cases are one word and only contain letters.
+
+# def count_vowels(list):
+#     count=0
+#     vowel ="aeiou"
+#     for i in range (0, len(list)):
+#         if list[i] in vowel.casefold():
+#             count+=1
+#     print(count)
+
+# count_vowels("Monday")
+
+# 5.Additional spaces have been added to a sentence. Return the correct sentence by removing them.
+# All words should be separated by one space, and there should be no spaces at the beginning or end of the sentence.
+
+# Examples
+#   correct_spacing("The film   starts       at      midnight. ")
+#   ➞ "The film starts at midnight."
+
+#   correct_spacing("The     waves were crashing  on the     shore.   ")
+#   ➞ "The waves were crashing on the shore."
+
+#   correct_spacing(" Always look on    the bright   side of  life.")
+#   ➞ "Always look on the bright side of life."
+
+# Hints
+#   Use "join" and "split" functions.
+def correct_space(input_string):
+
+    separated_string=input_string.split()
+    print(separated_string)
+
+    return("*".join(separated_string))
+    
+
+   
+
+
+print(correct_space("Today is    a   good day."))
+# number = input("Please enter a series of numbers, using any separators you like: ")
+# separators = ""
+
+# for char in number:
+#     if not char.isnumeric():
+#         separators = separators +char
+
+# # print(separators)
 
 # values = "".join(char if char not in separators else " " for char in number).split()
 # print(sum([int(val) for val in values]))
+
 
 
 
