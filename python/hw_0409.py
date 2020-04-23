@@ -118,10 +118,6 @@ def correct_space(input_string):
     print(separated_string)
 
     return("*".join(separated_string))
-    
-
-   
-
 
 print(correct_space("Today is    a   good day."))
 # number = input("Please enter a series of numbers, using any separators you like: ")
