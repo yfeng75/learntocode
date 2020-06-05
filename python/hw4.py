@@ -39,18 +39,18 @@
 #   returnUnique([1, 9, 8, 8, 7, 6, 1, 6]) ➞ [9, 7]
 #   returnUnique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]) ➞ [2, 1]
 #   returnUnique([9, 5, 6, 8, 7, 7, 1, 1, 1, 1, 1, 9, 8]) ➞ [5, 6]
-def returnUnique(number_list):
-    freq_count={}
-    unique=[]
-    for i in number_list:
-        if i in freq_count:
-            freq_count[i]+=1
-        else:
-            freq_count[i]=1
-    for i in freq_count:
-        if freq_count[i]==1:
-            unique.append(i)
-    return unique
+# def returnUnique(number_list):
+#     freq_count={}
+#     unique=[]
+#     for i in number_list:
+#         if i in freq_count:
+#             freq_count[i]+=1
+#         else:
+#             freq_count[i]=1
+#     for i in freq_count:
+#         if freq_count[i]==1:
+#             unique.append(i)
+#     return unique
     
     # no_dup=[]
     # for i in range(len(number_list)):
@@ -62,9 +62,19 @@ def returnUnique(number_list):
     # return no_dup
 
 
-print(returnUnique([1, 9, 8, 8, 7, 6, 1, 6]))
-print(returnUnique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]))
-print(returnUnique([9, 5, 6, 8, 7, 7, 1, 1, 1, 1, 1, 9, 8]) )
+# print(returnUnique([1, 9, 8, 8, 7, 6, 1, 6]))
+# print(returnUnique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]))
+# print(returnUnique([9, 5, 6, 8, 7, 7, 1, 1, 1, 1, 1, 9, 8]) )
 
 
+
+# 5.
+# Write a Python program to read lines from a file and 
+# save them to another file with reverse order.
+
+jabber=open("sample.txt",'r')
+with open("sample_reverse.txt",'w') as new_file:
+    lines=jabber.readlines()
+    for line in lines[::-1]:
+        print(line, end='',file=new_file)
 

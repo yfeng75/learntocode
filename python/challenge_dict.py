@@ -13,7 +13,7 @@ exits = {0:{"Q": 0},
         4:{"N": 1, "W": 2,"Q": 0},
         5:{"W": 2,  "S": 1 , "Q": 0}}
 
-letter = {"WEST":"W","EAST": "E","NORTH": "N","SOUTH": "S"}
+letter = {"WEST":"W","EAST": "E","NORTH": "N","SOUTH": "S","QUIT": "Q"}
 # print(letter.values())
 loc =1
 while True:

@@ -13,7 +13,7 @@ fruit = {"orange": "a sweet, orange, citrus fruite",
 # # del fruit
 # # fruit.clear()
 print(fruit)
-
+print(fruit[orange])
 # while True:
 #     dic_key = input("please enter a fruit: ")
 #     if dic_key =="quit":
